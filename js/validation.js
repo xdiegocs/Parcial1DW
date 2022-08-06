@@ -33,8 +33,8 @@ function zf_CheckMandatory() {
 					fieldObj.focus();
 					zf_ShowErrorMsg(zf_MandArray[i]);
 					return false;
-				} else if (fieldObj.nodeName == 'SELECT') { // No I18N
-					if (fieldObj.options[fieldObj.selectedIndex].value == '-Select-') {
+				} else if (fieldObj.nodeName == 'SELECCIONAR') { // No I18N
+					if (fieldObj.options[fieldObj.selectedIndex].value == '-Seleccionar-') {
 						fieldObj.focus();
 						zf_ShowErrorMsg(zf_MandArray[i]);
 						return false;
@@ -277,10 +277,10 @@ function zf_ValidatePhone(inpElem) {
 }
 
 function zf_ValidateSignature(objElem) {
-	var linkName = objElem.getAttribute("compname");
-	var canvasElem = document.getElementById("drawingCanvas-" + linkName);
+	var linkName = objElem.getAttribute("");
+	var canvasElem = document.getElementById("" + linkName);
 	var isValidSign = zf_IsSignaturePresent(objElem, linkName, canvasElem);
-	var hiddenSignInputElem = document.getElementById("hiddenSignInput-" + linkName);
+	var hiddenSignInputElem = document.getElementById("" + linkName);
 	if (isValidSign) {
 		hiddenSignInputElem.value = canvasElem.toDataURL();
 	} else {
@@ -290,8 +290,8 @@ function zf_ValidateSignature(objElem) {
 }
 
 function zf_MandatoryCheckSignature(objElem) {
-	var linkName = objElem.getAttribute("compname");
-	var canvasElem = document.getElementById("drawingCanvas-" + linkName);
+	var linkName = objElem.getAttribute("");
+	var canvasElem = document.getElementById("" + linkName);
 	var isValid = zf_IsSignaturePresent(objElem, linkName, canvasElem);
 	return isValid;
 }
@@ -321,15 +321,15 @@ function zf_FocusNext(elem, event) {
 	if (event.keyCode >= 37 && event.keyCode <= 40) {
 		return;
 	}
-	var compname = elem.getAttribute("compname");
-	var inpElemName = elem.getAttribute("name");
-	if (inpElemName == compname + "_countrycode") {
+	var compname = elem.getAttribute("");
+	var inpElemName = elem.getAttribute("");
+	if (inpElemName == compname + "") {
 		if (elem.value.length == 3) {
-			document.getElementsByName(compname + "_first")[0].focus();
+			document.getElementsByName(compname + "")[0].focus();
 		}
-	} else if (inpElemName == compname + "_first") {
+	} else if (inpElemName == compname + "") {
 		if (elem.value.length == 3) {
-			document.getElementsByName(compname + "_second")[0].focus();
+			document.getElementsByName(compname + "")[0].focus();
 		}
 	}
 }

@@ -21,7 +21,7 @@
 			<input type="hidden" name="zc_gad" value="">
 			<!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
 			<div class="zf-templateWrapper">
-				<!---------template Header Starts Here---------->
+				<!---------el encabezado empieza aqui---------->
 				<ul class="zf-tempHeadBdr">
 					<li class="zf-tempHeadContBdr">
 						<h2 class="zf-frmTitle"><em>Registro de Estudiantes</em></h2>
@@ -29,11 +29,11 @@
 						<div class="zf-clearBoth"></div>
 					</li>
 				</ul>
-				<!---------template Header Ends Here---------->
-				<!---------template Container Starts Here---------->
+				<!---------el encabezado termina aqui---------->
+				<!---------los contenedores empiezan aqui---------->
 				<div class="zf-subContWrap zf-topAlign">
 					<ul>
-						<!---------Name Starts Here---------->
+						<!---------el nombre empieza aqui---------->
 						<li class="zf-tempFrmWrapper zf-name zf-namemedium"><label class="zf-labelName">
 								Nombre
 								<em class="zf-important">*</em>
@@ -54,8 +54,8 @@
 							</div>
 							<div class="zf-clearBoth"></div>
 						</li>
-						<!---------Name Ends Here---------->
-						<!---------Date Starts Here---------->
+						<!---------el nombre termina aqui---------->
+						<!---------la fecha de nacimiento empieza aqui---------->
 						<li class="zf-tempFrmWrapper zf-date"><label class="zf-labelName">
 								Fecha de Nacimiento
 								<em class="zf-important">*</em>
@@ -67,9 +67,9 @@
 							</div>
 							<div class="zf-clearBoth"></div>
 						</li>
-						<!---------Date Ends Here---------->
-						<!--address-->
-						<!---------Address Starts Here---------->
+						<!---------la fecha de nacimiento termina aqui---------->
+						<!--direccion-->
+						<!---------la direccion empieza aqui---------->
 						<li class="zf-tempFrmWrapper zf-address zf-addrlarge "><label class="zf-labelName">
 								Dirección
 							</label>
@@ -130,8 +130,8 @@
 							</div>
 							<div class="zf-eclearBoth"></div>
 						</li>
-						<!---------Address Ends Here---------->
-						<!---------Email Starts Here---------->
+						<!---------la direccion termina aqui---------->
+						<!---------el correo empieza aqui---------->
 						<li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
 								Correo
 								<em class="zf-important">*</em>
@@ -142,8 +142,8 @@
 							</div>
 							<div class="zf-clearBoth"></div>
 						</li>
-						<!---------Email Ends Here---------->
-						<!---------Phone Starts Here---------->
+						<!---------el correo termina aqui---------->
+						<!---------el numero de telefono empieza aqui---------->
 						<li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
 								Telefono
 								<em class="zf-important">*</em>
@@ -153,7 +153,7 @@
 									<span> <input type="text" compname="PhoneNumber" name="PhoneNumber_estatecode"
 											maxlength="20" checktype="c7" value="" phoneFormat="1"
 											isCountryCodeEnabled=false fieldType="11"
-											id="international_PhoneNumber_countrycode" valType="number"
+											id="national_PhoneNumber_estatecode" valType="number"
 											phoneFormatType="1" placeholder="" />
 										<label>Número de Telefono</label> </span>
 									<div class="zf-clearBoth"></div>
@@ -163,8 +163,8 @@
 							</div>
 							<div class="zf-clearBoth"></div>
 						</li>
-						<!---------Phone Ends Here---------->
-						<!---------Checkbox Starts Here---------->
+						<!---------el numero de telefono termina aqui---------->
+						<!---------los checkbox1 empiezan aqui---------->
 						<li class="zf-checkbox zf-tempFrmWrapper zf-oneColumns"><label class="zf-labelName">¿Cuál forma
 								de estudio es tu preferida?
 								<em class="zf-important">*</em>
@@ -189,8 +189,8 @@
 							</div>
 							<div class="zf-clearBoth"></div>
 						</li>
-						<!---------Checkbox Ends Here---------->
-						<!---------Checkbox Starts Here---------->
+						<!---------los checkbox1 terminan aqui---------->
+						<!---------los checkbox2 empiezan aqui---------->
 						<li class="zf-checkbox zf-tempFrmWrapper zf-oneColumns"><label class="zf-labelName">¿A qué
 								carrera deseas inscribirte?
 								<em class="zf-important">*</em>
@@ -229,10 +229,10 @@
 							</div>
 							<div class="zf-clearBoth"></div>
 						</li>
-						<!---------Checkbox Ends Here---------->
+						<!---------los checkbox2 terminan aqui---------->
 					</ul>
 				</div>
-				<!---------template Container Starts Here---------->
+				<!---------el contenedor "enviar" empieza aqui---------->
 				<ul>
 					<li class="zf-fmFooter"><button class="zf-submitColor">Enviar Solicitud</button></li>
 				</ul>
@@ -243,7 +243,7 @@
 		var zf_DateRegex = new RegExp(
 			"^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$"
 			);
-		var zf_MandArray = ["First_Name", "Last_Name", "Date", "Email", "PhoneNumber_countrycode", "Checkbox", "Checkbox1"];
+		var zf_MandArray = ["First_Name", "Last_Name", "Date", "Email", "PhoneNumber_estatecode", "Checkbox", "Checkbox1"];
 		var zf_FieldArray = ["First_Name", "Last_Name", "Date", "Address_AddressLine1", "Address_AddressLine2", "Town",
 			"City", "ZipCode", "Estate", "Email", "PhoneNumber_estatecode", "Checkbox", "Checkbox1"
 		];
