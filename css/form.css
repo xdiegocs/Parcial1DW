@@ -99,9 +99,9 @@ button {
 	margin: 0 auto;
 	padding: 5px 10px;
 	-webkit-box-sizing: border-box;
-	/* Safari/Chrome, other WebKit */
+	/* Safari/Chrome, etc */
 	-moz-box-sizing: border-box;
-	/* Firefox, other Gecko */
+	/* Firefox, Gecko */
 	box-sizing: border-box;
 	/* Opera/IE 8+ */
 }
@@ -279,7 +279,7 @@ ul {
 	overflow: hidden;
 }
 
-/*****************template Header Starts Here****************/
+/*****************plantilla del encabezado empieza aqui****************/
 
 .zf-tempHeadBdr {
 	margin: 0;
@@ -743,7 +743,7 @@ ul {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1988d6', endColorstr='#1988d6');
 }
 
-/****************Field Small/Medium/Large Starts Here****************/
+/****************campos pequeños/medianos/largos empiezan aqui****************/
 
 .zf-small .zf-tempContDiv input[type="text"],
 .zf-small .zf-tempContDiv textarea,
@@ -997,7 +997,7 @@ ul {
 }
 
 
-/****************Field Small/Medium/Large Ends Here****************/
+/****************campos pequeños/medianos/largos terminan aqui****************/
 
 .zf-topAlign .zf-tempFrmWrapper .zf-labelName {
 	padding-bottom: 8px;
@@ -1083,7 +1083,7 @@ ul {
 	font-size: 13px;
 }
 
-/****************Form Top Align Starts Here****************/
+/****************Top Align empieza aqui****************/
 
 .zf-termsContainer {
 	margin: 0;
